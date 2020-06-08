@@ -1,0 +1,50 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" MinWidth="218" MinHeight="280" Width="218" Height="280"
+        x:Class="TicTacAvalonia.MainWindow"
+        Title="TicTacAvalonia">
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="auto"></RowDefinition>
+      <RowDefinition></RowDefinition>
+      <RowDefinition Height="auto"></RowDefinition>
+    </Grid.RowDefinitions>
+    <DockPanel>
+      <Menu DockPanel.Dock="Top">
+        <MenuItem Header="_Game">
+          <MenuItem Click="NewGameButton_Click" Name="NewGameButton" Header="New game"/>
+          <MenuItem Click="ExitButton_Click" Name="ExitButton" Header="Exit"/>
+        </MenuItem>
+        <MenuItem Header="_About">
+          <MenuItem Click="AboutButton_Click" Name="AboutButton" Header="About"/>
+        </MenuItem>
+      </Menu>
+    </DockPanel>
+    <Grid Grid.Row="1">
+      <Grid.RowDefinitions>
+        <RowDefinition></RowDefinition>
+        <RowDefinition></RowDefinition>
+        <RowDefinition></RowDefinition>
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition></ColumnDefinition>
+        <ColumnDefinition></ColumnDefinition>
+        <ColumnDefinition></ColumnDefinition>
+      </Grid.ColumnDefinitions>
+      <Button Name="Button00" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10" Click="Button00_Click"/>
+      <Button Name="Button01" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10" Click="Button01_Click"/>
+      <Button Name="Button02" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10" Click="Button02_Click"/>
+
+      <Button Name="Button10" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10" Click="Button10_Click"/>
+      <Button Name="Button11" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10" Click="Button11_Click"/>
+      <Button Name="Button12" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10" Click="Button12_Click"/>
+
+      <Button Name="Button20" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10" Click="Button20_Click"/>
+      <Button Name="Button21" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10" Click="Button21_Click"/>
+      <Button Name="Button22" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10" Click="Button22_Click"/>
+    </Grid>
+    <TextBlock Name="StatusBar" Grid.Row="2" Text="X's player turn." HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,5,0,5"></TextBlock>
+  </Grid>
+</Window>

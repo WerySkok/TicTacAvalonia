@@ -1,0 +1,24 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" Width="180" Height="154" MaxWidth="240" MaxHeight="154" MinWidth="240" MinHeight="154" d:DesignWidth="240" CanResize="False" d:DesignHeight="154"
+        x:Class="TicTacAvalonia.AboutWindow"
+        Title="About TicTacAvalonia">
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="auto"></RowDefinition>
+      <RowDefinition Height="auto"></RowDefinition>
+      <RowDefinition Height="auto"></RowDefinition>
+      <RowDefinition Height="auto"></RowDefinition>
+      <RowDefinition Height="auto"></RowDefinition>
+      <RowDefinition></RowDefinition>
+    </Grid.RowDefinitions>
+    <TextBlock Name="TextRow1" Grid.Row="0" HorizontalAlignment="Center">TicTacAvalonia 1.0</TextBlock>
+    <TextBlock Name="TextRow2" Grid.Row="1" HorizontalAlignment="Center">By WerySkok</TextBlock>
+    <TextBlock Name="TextRow3" Grid.Row="2" HorizontalAlignment="Center">Made with C# and Avalonia</TextBlock>
+    <TextBlock Name="TextRow4" Grid.Row="3" HorizontalAlignment="Center">Based on Tic-Tac-Toe by Veselcraft</TextBlock>
+    <TextBlock Name="TextRow5" Grid.Row="4" HorizontalAlignment="Center">Sources are on GitHub</TextBlock>
+    <Button Name="OkButton" Grid.Row="5" Click="OkButton_Click" VerticalAlignment="Bottom" Margin="15">Ok</Button>
+  </Grid>
+</Window>
